@@ -47,7 +47,7 @@ export default function GameDetail() {
     }
   }
 
-  if (loading) return <div className="page container"><div className="empty"><div className="spinner" style={{ margin: '0 auto' }}</div></div></div>;
+  if (loading) return <div className="page container"><div className="empty"><div className="spinner" style={{ margin: '0 auto' }}></div></div></div>;
   if (!game) return <div className="page container"><div className="empty">Oyun bulunamadı.</div></div>;
 
   return (
