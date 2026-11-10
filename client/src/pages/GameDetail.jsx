@@ -58,7 +58,7 @@ export default function GameDetail() {
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: 30 }}>
         <div>
           <img src={game.thumbnail_url} alt={game.title} style={{ width: '100%', maxHeight: 400, objectFit: 'cover', borderRadius: 10, border: '1px solid var(--border)' }} />
-          <h1 style={{ fontSize: 28, fontWeight: 800, margin: 16px 0 8px }}>{game.title}</h1>
+          <h1 style={{ fontSize: 28, fontWeight: 800, margin: '16px 0 8px' }}>{game.title}</h1>
           <p style={{ color: 'var(--text-muted)', marginBottom: 16 }}>{game.description}</p>
           <div className="player-meta" style={{ marginBottom: 16 }}>
             <span><Eye size={14} /> {game.plays?.toLocaleString?.() || game.plays} oynamış</span>
